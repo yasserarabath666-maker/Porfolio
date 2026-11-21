@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yasar Arabath | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+:root{--bg:#080e1b;--card:#111c30;--blue:#52a9ff;--white:#f4f7ff;--muted:#a3b2c9}
+body{background:var(--bg);color:var(--white);font-family:Inter,sans-serif}
+a{text-decoration:none;color:inherit}
+nav{position:sticky;top:0;z-index:10;background:#080e1bf2;border-bottom:1px solid #26334a;padding:18px 7%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:24px;font-weight:800;color:var(--blue)}
+nav div:last-child{display:flex;gap:20px;flex-wrap:wrap}
+nav a{font-size:12px;color:var(--muted)}
+nav a:hover{color:var(--blue)}
+section{padding:90px 9%}
+.hero{min-height:85vh;display:flex;align-items:center;background:radial-gradient(ellipse at 80% 30%,#123b68,transparent 55%)}
+.hero small{color:var(--blue);letter-spacing:3px;font-weight:700}
+.hero h1{font-size:clamp(40px,7vw,75px);line-height:1.15;margin:20px 0}
+.hero h1 span,.blue{color:var(--blue)}
+.hero p{color:var(--muted);max-width:650px;line-height:1.9}
+.btn{display:inline-block;padding:13px 23px;background:var(--blue);color:#061326;border-radius:8px;font-weight:700;margin:25px 10px 0 0}
+.outline{background:transparent;color:var(--blue);border:1px solid var(--blue)}
+.heading{font-size:34px;margin-bottom:12px}
+.desc{color:var(--muted);margin-bottom:32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:var(--card);padding:25px;border:1px solid #25344c;border-radius:15px;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:var(--blue)}
+.card h3{margin:12px 0;font-size:18px}
+.card p{color:var(--muted);font-size:14px;line-height:1.8}
+.icon{font-size:27px;color:var(--blue)}
+.tag{display:inline-block;border:1px solid #347fc0;color:var(--blue);padding:5px 12px;border-radius:30px;font-size:11px;margin-top:15px}
+.skills{margin:18px 0}
+.skills p{display:flex;justify-content:space-between;margin-bottom:8px;color:var(--white)}
+.track{height:7px;background:#28364d;border-radius:20px}
+.track span{height:100%;display:block;background:var(--blue);border-radius:20px}
+.cert{padding:0;overflow:hidden}
+.cert img{width:100%;height:165px;object-fit:cover;background:#26344a;display:block}
+.cert-info{padding:20px}
+.cert-info button{background:var(--blue);border:0;border-radius:6px;padding:10px 15px;margin-top:14px;font-weight:700;cursor:pointer}
+.modal{display:none;position:fixed;inset:0;background:#000e;z-index:100;justify-content:center;align-items:center;padding:20px}
+.modal.show{display:flex}
+.modal-box{background:#111c30;padding:20px;border-radius:12px;width:min(850px,100%);max-height:90vh;overflow:auto}
+.modal-box img{width:100%;max-height:65vh;object-fit:contain}
+.modal-actions{display:flex;gap:12px;margin-top:15px;flex-wrap:wrap}
+.modal-actions a,.modal-actions button{background:var(--blue);color:#071525;padding:10px 16px;border:0;border-radius:6px;font-weight:700;cursor:pointer}
+.modal-actions button{background:#293c55;color:white}
+.close{float:right;color:white;font-size:25px;cursor:pointer}
+.contact a{color:var(--blue);overflow-wrap:anywhere}
+footer{text-align:center;border-top:1px solid #25344c;padding:30px;color:var(--muted)}
+@media(max-width:650px){nav{align-items:flex-start;gap:12px;flex-direction:column}nav div:last-child{gap:12px}section{padding:70px 6%}}
+</style>
+</head>
+<body>
+
+<nav>
+ <div class="logo">YARZ.</div>
+ <div>
+  <a href="#home">HOME</a>
+  <a href="#about">ABOUT</a>
+  <a href="#education">EDUCATION</a>
+  <a href="#skills">SKILLS</a>
+  <a href="#certificates">CERTIFICATES</a>
+  <a href="#projects">PROJECTS</a>
+  <a href="#contact">CONTACT</a>
+ </div>
+</nav>
+
+<section class="hero" id="home">
+ <div>
+  <small>WELCOME TO MY PERSONAL PORTFOLIO</small>
+  <h1>Yasar Arabath<br><span>E.M</span></h1>
+  <h2>Commerce Student | Aspiring Professional</h2>
+  <br>
+  <p>I'm a B.Com student specializing in Accounting, currently developing my knowledge in Data Analytics and SAP. I believe in continuous learning, practical experience and professional growth.</p>
+  <a class="btn" href="#certificates">Explore My Certificates ↗</a>
+  <a class="btn outline" href="#contact">Let's Connect</a>
+ </div>
+</section>
+
+<section id="about">
+ <h2 class="heading">About <span class="blue">Me</span></h2>
+ <p class="desc">A motivated fresher building a professional career.</p>
+ <div class="grid">
+  <div class="card"><div class="icon">01</div><h3>My Background</h3><p>B.Com student at Jamal Mohamed College with a specialization in Accounting.</p></div>
+  <div class="card"><div class="icon">02</div><h3>My Learning</h3><p>Learning Data Analytics, SAP, Excel and SQL to develop business and analytical knowledge.</p></div>
+  <div class="card"><div class="icon">03</div><h3>My Goal</h3><p>To start my career in a professional organization and continuously improve my knowledge and skills.</p></div>
+ </div>
+</section>
+
+<section id="education">
+ <h2 class="heading">Education & <span class="blue">Qualification</span></h2>
+ <p class="desc">My academic journey</p>
+ <div class="grid">
+  <div class="card"><div class="icon">🎓</div><h3>Bachelor of Commerce</h3><p>Jamal Mohamed College, Tiruchirappalli</p><p>Specialization: Accounting</p><p>2024 – 2027</p><span class="tag">Pursuing</span></div>
+  <div class="card"><div class="icon">📘</div><h3>Higher Secondary</h3><p>12th Standard</p><p>84%</p></div>
+  <div class="card"><div class="icon">📚</div><h3>SSLC</h3><p>10th Standard</p><p>56.4%</p></div>
+ </div>
+</section>
+
+<section id="skills">
+ <h2 class="heading">My <span class="blue">Skills</span></h2>
+ <p class="desc">Technical knowledge and ongoing learning</p>
+ <div class="grid">
+  <div class="card">
+   <h3>Technical Skills</h3>
+   <div class="skills"><p>MS Excel</p><div class="track"><span style="width:70%"></span></div></div>
+   <div class="skills"><p>MS Word</p><div class="track"><span style="width:75%"></span></div></div>
+   <div class="skills"><p>Tally Prime</p><div class="track"><span style="width:65%"></span></div></div>
+   <div class="skills"><p>SQL (Learning)</p><div class="track"><span style="width:35%"></span></div></div>
+  </div>
+  <div class="card">
+   <h3>Professional Development</h3>
+   <div class="skills"><p>Data Analytics</p><div class="track"><span style="width:60%"></span></div></div>
+   <div class="skills"><p>SAP (Learning)</p><div class="track"><span style="width:35%"></span></div></div>
+   <div class="skills"><p>Accounting</p><div class="track"><span style="width:65%"></span></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="certificates">
+ <h2 class="heading">Certificates & <span class="blue">Achievements</span></h2>
+ <p class="desc">Click any certificate to view its full-size preview. Replace the sample images with your actual certificates.</p>
+
+ <div class="grid">
+
+  <div class="card cert">
+   <img src="tally.pdf" alt="Tally Prime certificate">
+   <div class="cert-info"><h3>Tally Prime</h3><p>Accounting Software Certification</p><button onclick="viewCert('certificates/tally.jpg','Tally Prime')">View Certificate ↗</button></div>
+  </div>
+
+  <div class="card cert">
+   <img src="data-analytics.pdf" alt="Data Analytics certificate">
+   <div class="cert-info"><h3>Data Analytics</h3><p>30-Day Training – Novi Tech Academy</p><button onclick="viewCert('certificates/data-analytics.jpg','Data Analytics')">View Certificate ↗</button></div>
+  </div>
+
+  <div class="card cert">
+   <img src="bootcampexcel.pdf" alt="Excel Bootcamp certificate">
+   <div class="cert-info"><h3>Excel Bootcamp</h3><p>Additional Excel Bootcamp</p><button onclick="viewCert('certificates/excel.jpg','Excel Bootcamp')">View Certificate ↗</button></div>
+  </div>
+
+  <div class="card cert">
+   <img src="bootcampsql.pdf" alt="SQL Bootcamp certificate">
+   <div class="cert-info"><h3>SQL Bootcamp</h3><p>Additional SQL Bootcamp</p><button onclick="viewCert('certificates/sql.jpg','SQL Bootcamp')">View Certificate ↗</button></div>
+  </div>
+
+  <div class="card cert">
+   <img src="viksit-bharat.png" alt="Viksit Bharat certificate">
+   <div class="cert-info"><h3>Viksit Bharat Young Leaders Dialogue</h3><p>Participation / Achievement</p><button onclick="viewCert('certificates/viksit-bharat.jpg','Viksit Bharat')">View Certificate ↗</button></div>
+  </div>
+
+  <div class="card cert">
+   <img src="specialsedaccounting.png" alt="Accounting specialization document">
+   <div class="cert-info"><h3>Accounting Specialization</h3><p>Jamal Mohamed College</p><button onclick="viewCert('certificates/accounting.jpg','Accounting Specialization')">View Certificate ↗</button></div>
+  </div>
+
+ </div>
+</section>
+
+<section id="projects">
+ <h2 class="heading">My <span class="blue">Projects</span></h2>
+ <p class="desc">Practical learning and project development</p>
+ <div class="grid">
+  <div class="card"><div class="icon">📊</div><h3>Excel Projects</h3><p>Spreadsheet practice, data organization and analysis exercises.</p></div>
+  <div class="card"><div class="icon">🗄️</div><h3>SQL Practice</h3><p>Database fundamentals and basic query practice.</p></div>
+  <div class="card"><div class="icon">📈</div><h3>Data Analytics</h3><p>Learning analytical concepts and practical data exercises.</p></div>
+ </div>
+</section>
+
+<section id="contact">
+ <h2 class="heading">Let's <span class="blue">Connect</span></h2>
+ <p class="desc">Open to fresher opportunities, internships and professional connections.</p>
+ <div class="grid">
+  <div class="card contact"><div class="icon">✉</div><h3>Email</h3><p><a href="mailto:yasserarabath666@gmail.com">yasserarabath666@gmail.com</a></p></div>
+  <div class="card contact"><div class="icon">in</div><h3>LinkedIn</h3><p><a href="https://www.linkedin.com/in/yasar-arabath-e-m-738756353/" target="_blank">Visit my LinkedIn Profile ↗</a></p></div>
+  <div class="card contact"><div class="icon">⌖</div><h3>Location</h3><p>Kadaiyanallur, Tenkasi, Tamil Nadu, India</p></div>
+ </div>
+</section>
+
+<footer>
+ <p>Designed & Developed by <span class="blue">Yasar Arabath E.M</span></p>
+ <p>© 2026 All Rights Reserved</p>
+</footer>
+
+<div class="modal" id="certificateModal" onclick="if(event.target===this)closeCert()">
+ <div class="modal-box">
+  <span class="close" onclick="closeCert()">×</span>
+  <h3 id="certTitle" style="margin:15px 0"></h3>
+  <img id="certPreview" src="" alt="Certificate preview">
+  <div class="modal-actions">
+   <a id="downloadCert" href="#" download>Download Certificate ↓</a>
+   <button onclick="closeCert()">Close</button>
+  </div>
+ </div>
+</div>
+
+<script>
+function viewCert(path,title){
+ const modal=document.getElementById('certificateModal');
+ document.getElementById('certTitle').textContent=title;
+ document.getElementById('certPreview').src=path;
+ document.getElementById('downloadCert').href=path;
+ modal.classList.add('show');
+}
+function closeCert(){
+ document.getElementById('certificateModal').classList.remove('show');
+ document.getElementById('certPreview').src='';
+}
+document.addEventListener('keydown',function(e){
+ if(e.key==='Escape')closeCert();
+});
+</script>
+</body>
+</html>
